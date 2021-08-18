@@ -1,0 +1,119 @@
+$Frank:'Frank Ruhl Libre', serif;
+$Roboto:'Roboto', sans-serif;
+html { box-sizing: border-box; }
+*, *:before, *:after { box-sizing: inherit; }
+img { box-sizing: content-box; }
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+* {
+	outline: 0 none;
+}
+body {
+	line-height: 1.2;
+	background: #fff;
+	font-family: $Roboto;
+	width: 100vw;
+	padding-top: 131px;
+	overflow-x: hidden;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+a:focus{
+	outline: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+.dfr{
+	display: -webkit-flex;
+	display: -moz-flex;
+	display: -ms-flex;
+	display: -o-flex;
+	display: flex;
+	flex-wrap: wrap;
+	flex-direction: row;
+	align-items: center;
+}
+.dfc{
+	display: -webkit-flex;
+	display: -moz-flex;
+	display: -ms-flex;
+	display: -o-flex;
+	display: flex;
+	flex-wrap: wrap;
+	flex-direction: column;
+}
+.button{
+	width: 133px;
+	height: 28px;
+	background: #D9AF66;
+	border: 1.5px solid #D9AF66;
+	border-radius: 6px;
+	color: #143B13;
+	font-weight: 900;
+	font-size: 12px;
+	font-family: $Frank;
+	display: -webkit-flex;
+	display: -moz-flex;
+	display: -ms-flex;
+	display: -o-flex;
+	display: flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+	justify-content: center;
+	align-items: center;
+	cursor: pointer;
+	transition: all 0.3s ease;
+	&:hover{
+		background: #BF8E39;
+		border-color:  #BF8E39;
+	}
+	&:before{
+		margin-right: 5px;
+	}
+	&.transparent{
+		background-color: transparent;
+		&:hover{
+			background: #BF8E39;
+			border-color:  #BF8E39;
+			color: #fff;
+		}
+	}
+}
+@media only screen and (max-width: 1024px) {
+	body{
+		padding-top: 113px;
+	}
+}
